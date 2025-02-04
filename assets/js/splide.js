@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function () { //executa o js depoi
         pagination: true,
         arrows: false,
         autoplay: true,
-			  gap: 22,
-			  interval: 1000,
+	gap: 22,
+	interval: 3000,
       });
       splide.mount();
     }
