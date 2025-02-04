@@ -1,0 +1,102 @@
+.academico-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.academico-container:nth-child(2) {
+    position: relative;
+    animation: slideFromLeft 1s forwards;
+}
+
+.academico-container:nth-child(3) {
+    position: relative;
+    animation: slideFromRight 1s forwards;
+}
+
+.academico-container::after {
+    content: ' ';
+    background-color: #0e2a41;
+    height: 2px !important;
+    position: relative;
+    left: calc(-50vw + 50%);
+    height: auto;
+    width: 100vw !important;
+    opacity: 50%;
+}
+
+.academico-container > a {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.academico-container > div {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.academico-container > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 700px;
+}
+
+.academico-container > h3 {
+    font-size: 25px;
+    font-family: 'InterTight-Bold';
+    color: #ffffff;
+}
+.academico-container > div > a > img {
+    height: 100%;
+    width: 100%;
+    max-width: 352px;
+}
+.academico-container > div > div p,
+.academico-link > p {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'InterTight-Regular';
+    line-height: 23px;
+}
+.academico-container > div > div > p > span{
+    color: #ffffff;
+    font-family: 'InterTight-Bold';
+}
+
+.academico-link > a {
+    display: flex;
+    width: fit-content;
+    font-size: 16px;
+    font-family: 'InterTight-Regular';
+    line-height: 23px;
+    background-color: #0e2a41;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #0e2a41;
+}
+.academico-link {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media (min-width: 769px) {
+    .academico-link > a:hover {
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 769px) {
+    .academico-container > div {
+        flex-direction: column;
+    }
+    .academico-container:nth-child(3) > div > a{
+        order: 2;
+    }
+}

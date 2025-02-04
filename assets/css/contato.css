@@ -1,0 +1,27 @@
+.contato-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.contato-container > a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contato-container > a > img {
+    width: 70px;
+    height: 70px;
+}
+
+.contato-container > a > p {
+    font-size: 25px;
+    font-family: 'InterTight-Bold';
+    color: #fff;
+}
+@media (max-width: 769px) {
+    .contato-container {
+        flex-direction: column;
+    }
+}

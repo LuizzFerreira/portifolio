@@ -1,0 +1,81 @@
+.experiencia-1 {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+    animation: slideFromLeft 1s forwards;
+}
+
+.experiencia-1 > a {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.experiencia-1 > a > img {
+    width: 550px;
+    height: 318px;
+}
+
+.experiencia-1 > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experiencia-1 > div > h3 {
+    font-size: 25px;
+    font-family: 'InterTight-Bold';
+    color: #ffffff;
+}
+.experiencia-1 > div > p,
+.experiencia-1 > div > div > p {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'InterTight-Regular';
+    line-height: 23px;
+}
+.experiencia-1 > div > p > span{
+    color: #000000;
+    font-family: 'InterTight-Bold';
+}
+
+.experiencia-1 > div > div > a {
+    width: fit-content;
+    font-size: 16px;
+    font-family: 'InterTight-Regular';
+    line-height: 23px;
+    background-color: #0e2a41;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #0e2a41;
+}
+.experiencia-1 > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media (min-width: 769px) {
+    .experiencia-1 > div > div > a:hover {
+        background-color: transparent;
+        color: #0e2a41;
+    }
+}
+
+@media (max-width: 769px) {
+    .experiencia-1 {
+        flex-direction: column;
+    }
+    .experiencia-1 > a {
+        order: 1;
+    }
+    .experiencia-1 > div {
+        order: 2;
+    }
+    .experiencia-1 > a > img {
+        width: 100%;
+        height: auto;
+    }
+}
