@@ -75,6 +75,6 @@ scrollTopBtn.addEventListener('click', function() {
     link.href = "assets/cv/Curriculo.pdf"; 
     link.download = "Curriculo_Luiz_Gabriel.pdf";
     document.body.appendChild(link);
-    link.click();
+    window.open(link.href, "_blank");
     document.body.removeChild(link);
 });
