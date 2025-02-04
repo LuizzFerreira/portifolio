@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () { //executa o js depoi
         arrows: false,
         autoplay: true,
 	gap: 22,
-	interval: 3000,
+	interval: 7000,
       });
       splide.mount();
     }
