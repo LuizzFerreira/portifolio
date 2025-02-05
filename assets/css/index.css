@@ -146,8 +146,8 @@ main {
 .cards-container > ul > li > .card > div > p:nth-child(1) {
     color: #ffffff;
     font-family: 'InterTight-Semibold';
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 22px;
+    line-height: 24px;
     padding-bottom: 3px;
     border-bottom: 1px solid #ffffff65;
 }
