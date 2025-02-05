@@ -27,11 +27,11 @@ main {
     gap: 10px;
 }
 .main-painel > .text-painel > h1 {
-    height: 37px;
+    height: 54px;
     color: #ffffff;
     font-family: 'InterTight-Bold';
-    font-size: 32px;
-    line-height: 37px;
+    font-size: 58px;
+    line-height: 54px;
 }
 .sub-title {
     color: #ffffff;
@@ -270,5 +270,10 @@ main {
     .cards-container > ul > li > .card > .card-back {
         padding: 6px;
         gap: 11px;
+    }
+    .main-painel > .text-painel > h1 {
+        height: 37px;
+        line-height: 37px;
+        font-size: 32px;
     }
 }
