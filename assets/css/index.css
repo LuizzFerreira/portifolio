@@ -191,25 +191,32 @@ main {
 .technology-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 30px;
+    align-items: center;
     max-width: 400px;
-    margin: auto;
 }
-.technology-container > h2 {
+.technology-container > div > h2 {
     color: #ffffff;
     font-size: 32px;
     line-height: 37px;
     font-family: 'InterTight-Bold';
 }
-.technology-container > ul {
+
+.technology-container > div > h3 {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 31px;
+    font-family: 'InterTight-Bold';
+}
+
+.technology-container > div > ul {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     align-items: center;
     justify-content: space-between;
 }
-.technology-container > ul > li > img {
+.technology-container > div > ul > li > img {
     width: 100px;
     height: auto;
 }
@@ -276,4 +283,7 @@ main {
         line-height: 37px;
         font-size: 32px;
     }
+        .technology-container {
+        flex-direction: column;
+    } 
 }
