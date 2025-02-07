@@ -187,8 +187,16 @@ main {
     height: 100% !important;
     max-height: 80px;
 }
-
 .technology-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.technology-container > div {
     display: flex;
     flex-direction: column;
     gap: 30px;
