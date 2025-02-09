@@ -83,6 +83,67 @@ main {
     font-size: 32px;
     line-height: 37px;
 }
+
+.recommendations-section {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recommendations-section > h2 {
+    color: #ffffff;
+    font-size: 32px;
+    line-height: 37px;
+    font-family: 'InterTight-Bold';
+}
+
+.recommendations-container > div > .splide__arrow {
+    background-color: transparent;
+    filter: invert(1);
+}
+
+.recommendations-container > div > .splide__arrow--next {
+    right: -60px !important;
+}
+
+.recommendations-container > div > .splide__arrow--prev {
+    left: -60px !important;
+}
+
+.recommendations-container > div > ul > li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #182d6b;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.recommendations-container {
+    display: flex;
+    margin: auto;
+    height: auto;
+    width: 100%;
+    max-width: 797px;
+}
+
+.recommendations-name {
+    color: #ffffff;
+    font-family: 'InterTight-Bold';
+    letter-spacing: 1.2px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.recommendations-acting {
+    color: #afafaf;
+    font-family: 'InterTight-Bold';
+    letter-spacing: 1.2px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
 .cards-container > ul {
     display: flex;
     justify-content: space-between;
@@ -294,4 +355,7 @@ main {
         .technology-container {
         flex-direction: column;
     } 
+    .recommendations-section {
+        margin: 0;
+    }
 }
