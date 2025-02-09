@@ -121,6 +121,7 @@ header {
     gap: 10px;
     position: absolute;
     right: 30px;
+    z-index: 2;
     background: transparent;
     border: none;
     cursor: pointer;
