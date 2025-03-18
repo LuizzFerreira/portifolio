@@ -290,6 +290,10 @@ main {
     height: auto;
 }
 
+.clear-mode .technology-container > div > ul > li > .img-clear-mode {
+    filter: invert(1);
+}
+
 .skills-block {
     display: flex;
     flex-direction: column;
