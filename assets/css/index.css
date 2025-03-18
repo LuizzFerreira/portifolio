@@ -265,18 +265,11 @@ main {
     max-width: 400px;
 }
 
-.clear-mode .technology-container > div > h2 {
-    color: #000000;
-}
-
 .technology-container > div > h2 {
     color: #ffffff;
     font-size: 32px;
     line-height: 37px;
     font-family: 'InterTight-Bold';
-}
-.clear-mode .technology-container > div > h3 {
-    color: #000000;
 }
 
 .technology-container > div > h3 {
@@ -296,10 +289,6 @@ main {
 .technology-container > div > ul > li > img {
     width: 100px;
     height: auto;
-}
-
-.clear-mode .technology-container > div > ul > li > .img-clear-mode {
-    filter: invert(1);
 }
 
 .skills-block {
