@@ -98,10 +98,6 @@ main {
     font-family: 'InterTight-Bold';
 }
 
-.clear-mode .recommendations-container > div > .splide__arrow {
-    filter: none;
-}
-
 .recommendations-container > div > .splide__arrow {
     background-color: transparent;
     filter: invert(1);
