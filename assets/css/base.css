@@ -167,16 +167,6 @@ a {
   background-color: #25329a;
 }
 
-.clear-mode > main > .technology-container > ul > li:nth-child(4) > img,
-.clear-mode > main > .technology-container > ul > li:nth-child(5) > img,
-.clear-mode > main > .technology-container > ul > li:nth-child(6) > img {
-  filter: invert(1);
-}
-
-.clear-mode > main > .technology-container > h2 {
-  color: #000000;
-}
-
 .clear-mode > main > .main-painel > .text-painel > h1{
   color: #000000;
 }
@@ -211,6 +201,22 @@ a {
 
 .clear-mode > main > .academico-container > div > a > img {
   filter: invert(1);
+}
+
+.clear-mode .recommendations-container > div > .splide__arrow {
+    filter: none;
+}
+
+.clear-mode .technology-container > div > h2 {
+    color: #000000;
+}
+
+.clear-mode .technology-container > div > h3 {
+    color: #000000;
+}
+
+.clear-mode .technology-container > div > ul > li > .img-clear-mode {
+    filter: invert(1);
 }
 
 @keyframes slideFromTop {
