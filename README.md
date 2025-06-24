@@ -37,13 +37,3 @@ Projetos - Galeria com os principais projetos desenvolvidos.
 Habilidades - Tecnologias e ferramentas que domino.
 
 Contato - Formulário e links para minhas redes sociais.
-
-📞 Contato
-
-Email: seuemail@email.com
-
-LinkedIn: linkedin.com/in/seuusuario
-
-GitHub: github.com/seuusuario
-
-Fique à vontade para explorar meu site e entrar em contato! 😊
