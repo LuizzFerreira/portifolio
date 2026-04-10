@@ -24,7 +24,7 @@ export default function Testimonials() {
 
   useEffect(() => {
     if (paused) return
-    const timer = setInterval(next, 12000)
+    const timer = setInterval(next, 20000)
     return () => clearInterval(timer)
   }, [paused, next])
 
