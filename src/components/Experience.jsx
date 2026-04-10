@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { FaBriefcase, FaExternalLinkAlt } from 'react-icons/fa'
+import logoOns from '../assets/img/logo-ons-branca-pequena.png'
+import logoMundiware from '../assets/img/mundiware-logo.png'
 import { useTheme } from '../context/ThemeContext'
 import SectionTitle from './SectionTitle'
 
@@ -8,6 +10,7 @@ const experiences = [
   {
     title: 'Estagiário de TI',
     company: 'Operador Nacional do Sistema Elétrico (ONS)',
+    logo: logoOns,
     period: 'Abr/2025 - Atual • Estagiário',
     description:
       'Atuo em projetos de apoio à equipe de TI, desenvolvendo e dando manutenção em soluções com HTML, CSS, JavaScript, React, C#, .NET, SQL Server, Power BI e muito mais. Essa experiência tem me proporcionado contato direto com diferentes tecnologias e práticas do setor, ampliando minha visão e fortalecendo minhas habilidades técnicas e profissionais.',
@@ -17,6 +20,7 @@ const experiences = [
   {
     title: 'Desenvolvedor Front-End',
     company: 'MundiWare',
+    logo: logoMundiware,
     period: '9 meses • Estágio → Efetivado',
     description:
       'Atuei como desenvolvedor front-end em uma empresa especializada no desenvolvimento e suporte de portais de notícia. Iniciei como estagiário por 4 meses e fui efetivado, completando 9 meses de atuação. Participei de reuniões, colaborei em projetos e contribuí em diversas atividades junto a toda a equipe.',
@@ -62,8 +66,8 @@ export default function Experience() {
               <div className="rounded-2xl group transition-all duration-500" style={cardStyle}>
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 shrink-0 rounded-xl bg-indigo-500/10 flex items-center justify-center">
-                      <FaBriefcase className="text-indigo-400" size={20} />
+                    <div className="w-12 h-12 shrink-0 rounded-xl bg-indigo-500/10 flex items-center justify-center overflow-hidden">
+                      {exp.logo ? <img src={exp.logo} alt={exp.company} className="w-8 h-8 object-contain" /> : <FaBriefcase className="text-indigo-400" size={20} />}
                     </div>
                     <div>
                       <h3 className="text-lg sm:text-xl font-bold" style={{ color: dark ? '#fff' : '#1a1a2e' }}>{exp.title}</h3>

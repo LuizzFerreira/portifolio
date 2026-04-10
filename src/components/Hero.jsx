@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaWhatsapp, FaDownload } from 'react-icons/fa'
 import { useMemo } from 'react'
 import { useTheme } from '../context/ThemeContext'
+import foto from '../assets/img/fotoo.jpg'
 
 export default function Hero() {
   const { dark } = useTheme()
@@ -43,15 +44,14 @@ export default function Hero() {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.5, type: 'spring' }}
-          className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 p-1 animate-pulse-glow"
+          className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 p-1 animate-pulse-glow"
           style={{ margin: '0 auto 2rem' }}
         >
-          <div
-            className="w-full h-full rounded-full flex items-center justify-center text-3xl sm:text-4xl font-bold gradient-text"
-            style={{ background: dark ? '#111827' : '#ffffff' }}
-          >
-            LG
-          </div>
+          <img
+            src={foto}
+            alt="Luiz Gabriel"
+            className="w-full h-full rounded-full object-cover"
+          />
         </motion.div>
 
         <motion.p
@@ -149,21 +149,6 @@ export default function Hero() {
           ))}
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-          style={{ marginTop: '3rem' }}
-        >
-          <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="w-6 h-10 rounded-full flex justify-center pt-2"
-            style={{ margin: '0 auto', border: dark ? '2px solid rgba(255,255,255,0.2)' : '2px solid rgba(0,0,0,0.15)' }}
-          >
-            <div className="w-1 h-2 bg-indigo-400 rounded-full" />
-          </motion.div>
-        </motion.div>
       </div>
     </section>
   )

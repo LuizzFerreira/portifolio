@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { FaExternalLinkAlt, FaReact } from 'react-icons/fa'
+import { FaExternalLinkAlt } from 'react-icons/fa'
+import projetoImg from '../assets/img/Captura-de-tela-projeto.png'
 import { useTheme } from '../context/ThemeContext'
 import SectionTitle from './SectionTitle'
 
@@ -26,15 +27,9 @@ export default function Projects() {
               backdropFilter: 'blur(12px)',
             }}
           >
-            <div className="h-36 sm:h-48 bg-gradient-to-br from-indigo-600/20 via-purple-600/20 to-pink-600/20 relative flex items-center justify-center">
-              <motion.div
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-                className="text-indigo-400/30"
-              >
-                <FaReact size={80} />
-              </motion.div>
-              <div className="absolute inset-0" style={{ background: dark ? 'linear-gradient(to top, #0a0a0f, transparent)' : 'linear-gradient(to top, #f8f9fc, transparent)' }} />
+            <div className="relative overflow-hidden" style={{ height: '220px' }}>
+              <img src={projetoImg} alt="Plataforma de Previsão de Gastos" className="w-full h-full object-cover object-top" />
+              <div className="absolute inset-0" style={{ background: dark ? 'linear-gradient(to top, #0a0a0f, transparent 60%)' : 'linear-gradient(to top, #f8f9fc, transparent 60%)' }} />
             </div>
 
             <div className="relative z-10" style={{ padding: '1.25rem', marginTop: '-1.5rem', display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>

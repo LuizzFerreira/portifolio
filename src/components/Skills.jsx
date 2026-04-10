@@ -23,7 +23,7 @@ export default function Skills() {
               animate={inView ? { opacity: 1, scale: 1 } : {}}
               transition={{ delay: i * 0.1, type: 'spring', stiffness: 200 }}
               whileHover={{ y: -10, rotate: [0, -2, 2, 0] }}
-              className="rounded-2xl text-center group transition-all duration-300 cursor-default"
+              className="rounded-2xl text-center group transition-all duration-300 cursor-default overflow-hidden"
               style={{
                 padding: '1rem',
                 background: dark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.02)',

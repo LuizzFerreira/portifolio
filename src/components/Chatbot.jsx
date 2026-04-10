@@ -206,6 +206,8 @@ export default function Chatbot() {
   const [lastSuggest, setLastSuggest] = useState(null)
   const endRef = useRef(null)
   const inputRef = useRef(null)
+  const chatRef = useRef(null)
+  const btnRef = useRef(null)
   const { dark } = useTheme()
 
   useEffect(() => {
@@ -214,6 +216,16 @@ export default function Chatbot() {
 
   useEffect(() => {
     if (open) inputRef.current?.focus()
+  }, [open])
+
+  useEffect(() => {
+    if (!open) return
+    const handler = (e) => {
+      if (chatRef.current?.contains(e.target) || btnRef.current?.contains(e.target)) return
+      setOpen(false)
+    }
+    document.addEventListener('pointerdown', handler)
+    return () => document.removeEventListener('pointerdown', handler)
   }, [open])
 
   const getResponse = (text) => {
@@ -264,6 +276,7 @@ export default function Chatbot() {
   return (
     <>
       <motion.button
+        ref={btnRef}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setOpen(!open)}
@@ -280,6 +293,7 @@ export default function Chatbot() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
             transition={{ duration: 0.25 }}
+            ref={chatRef}
             className="fixed z-50 rounded-2xl flex flex-col"
             style={{
               bottom: '5.5rem',
