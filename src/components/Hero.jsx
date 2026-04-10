@@ -109,7 +109,7 @@ export default function Hero() {
             Recomendações
           </a>
           <a
-            href="/docs/curriculo.pdf"
+            href="/portifolio/docs/Luiz_Gabriel_da_Rocha_Ferreira.pdf"
             download
             className="w-full sm:w-auto rounded-full font-medium transition-all duration-300 hover:-translate-y-1 text-center inline-flex items-center justify-center gap-2"
             style={{
